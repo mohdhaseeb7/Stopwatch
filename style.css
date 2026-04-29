@@ -1,24 +1,44 @@
-body{
-    font-family:  sans-serif;
+* {
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    font-family: "Montserrat";
 }
 body::selection{
     background-color: blue;
 }
 #stopwatch{
-    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin: 90px;
     font-size: 100px;
 }
+
+#time {
+    margin: 0px;
+}
+
 #start-stop-btn, #reset-btn{
     border: none;
-    width: 120px;
-    height: 50px;
+    width: 90px;
+    height: 40px;
     margin-inline: 20px;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
     color: white;
 }
 
-
+#milliseconds{
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+}
 #start-stop-btn{
     background-color: black;
 }
